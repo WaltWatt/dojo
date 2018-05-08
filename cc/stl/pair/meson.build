@@ -11,19 +11,4 @@ project(
 executable(
     'pair',
     'main.cc',
-    #cpp_args : 'O3',
 )
-
-# test
-#testdir = 'test/'
-#tests = [
-#    'test_funct',
-#]
-
-#foreach t : tests
-#    _test = executable(
-#        t,
-#        ['test/main.cc', testdir + t + '.cc'],
-#    )
-#    test(t, _test)
-#endforeach

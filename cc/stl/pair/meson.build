@@ -1,0 +1,29 @@
+project(
+    'pair',
+    'cpp',
+    default_options : [
+        'cpp_std=c++14',
+        'warning_level=2',
+        'werror=true',
+    ],
+)
+
+executable(
+    'pair',
+    'main.cc',
+    #cpp_args : 'O3',
+)
+
+# test
+#testdir = 'test/'
+#tests = [
+#    'test_funct',
+#]
+
+#foreach t : tests
+#    _test = executable(
+#        t,
+#        ['test/main.cc', testdir + t + '.cc'],
+#    )
+#    test(t, _test)
+#endforeach
